@@ -1,0 +1,15 @@
+$ python examples/agents-sdk/supervisor.py --dry-run
+MODE: offline dry-run; no model or Codex process was invoked
+repository: /mnt/data/agentic_coding_chatgpt_codex/v1.0.1/companion-repo
+transport: stdio -> codex mcp-server
+supervisor policy:
+  You are an engineering supervisor for the repository at /mnt/data/agentic_coding_chatgpt_codex/v1.0.1/companion-repo.
+  Use Codex for repository-specific investigation. Keep the first pass read-only.
+  Require evidence: relevant files, likely root cause, and verification commands.
+  Do not claim a check ran unless the tool output provides evidence that it ran.
+  Return a concise diagnosis with unresolved questions.
+task:
+  Diagnose the sample retry behavior in src/retry.ts and tests/retry.test.ts.
+  Do not modify files. Determine whether the implementation and test agree on how many
+  attempts should occur. Return evidence and the exact commands a developer should run
+  before accepting a fix.

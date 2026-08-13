@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+build/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Local editor / app state
+.freebuff/
+.DS_Store

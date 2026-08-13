@@ -1,0 +1,10 @@
+# EXPERIMENTAL EXAMPLE - verify current Codex Rules documentation before use.
+# Rules govern command-specific escalation policy; they do not replace sandboxing.
+
+prefix_rule(
+    pattern=["gh", "pr", "view"],
+    decision="prompt",
+    justification="Confirm the task authorizes reading GitHub PR metadata before leaving the local sandbox boundary.",
+    match=["gh pr view 123"],
+    not_match=["gh issue view 123"],
+)

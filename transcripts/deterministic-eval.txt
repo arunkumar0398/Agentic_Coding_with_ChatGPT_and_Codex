@@ -1,0 +1,33 @@
+$ node evals/run-evals.mjs
+{
+  "taskId": "retry-regression-001",
+  "criteria": {
+    "test": {
+      "passed": true,
+      "weight": 40,
+      "score": 40,
+      "detail": "pass"
+    },
+    "typecheck": {
+      "passed": true,
+      "weight": 20,
+      "score": 20,
+      "detail": "pass"
+    },
+    "scope": {
+      "passed": true,
+      "weight": 20,
+      "score": 20,
+      "detail": "Allowed files only"
+    },
+    "evidence": {
+      "passed": true,
+      "weight": 20,
+      "score": 20,
+      "detail": "2 evidence item(s)"
+    }
+  },
+  "total": 100,
+  "max": 100,
+  "percent": 100
+}

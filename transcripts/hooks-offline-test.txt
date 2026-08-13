@@ -1,0 +1,5 @@
+$ python examples/hooks/test_hooks.py
+PASS  'git status --short': allow (expected allow)
+PASS  'npm test': allow (expected allow)
+PASS  'git reset --hard': block (expected block)
+PASS  'git push origin main --force': block (expected block)

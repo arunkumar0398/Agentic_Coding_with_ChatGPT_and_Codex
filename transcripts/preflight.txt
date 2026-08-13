@@ -1,0 +1,5 @@
+$ bash scripts/preflight.sh
+git:  git version 2.47.3
+node: v22.16.0
+npm:  10.9.2
+codex: not found (needed for Codex labs)

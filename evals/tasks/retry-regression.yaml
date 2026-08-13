@@ -1,0 +1,13 @@
+task: retry-regression
+objective: "Fix an introduced retry regression without changing the public function signature."
+starting_state: "Use a branch where the retry loop stops one attempt too early."
+criteria:
+  targeted_tests_pass: true
+  full_tests_pass: true
+  typecheck_pass: true
+  public_api_unchanged: true
+  unrelated_files_changed_max: 1
+review_focus:
+  - off_by_one_behavior
+  - async_error_propagation
+  - test_quality

@@ -1,0 +1,12 @@
+{
+  "taskId": "retry-regression-001",
+  "changedFiles": ["src/retry.ts", "tests/retry.test.ts"],
+  "checks": {
+    "test": "pass",
+    "typecheck": "pass"
+  },
+  "evidence": [
+    "targeted retry test passed",
+    "TypeScript typecheck passed"
+  ]
+}

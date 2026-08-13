@@ -1,0 +1,12 @@
+{
+  "taskId": "retry-regression-001",
+  "objective": "Fix the retry regression without changing the public function signature.",
+  "allowedFiles": ["src/retry.ts", "tests/retry.test.ts"],
+  "requiredChecks": ["test", "typecheck"],
+  "weights": {
+    "test": 40,
+    "typecheck": 20,
+    "scope": 20,
+    "evidence": 20
+  }
+}

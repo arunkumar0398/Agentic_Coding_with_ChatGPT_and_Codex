@@ -1,0 +1,11 @@
+[agents]
+max_concurrent_threads_per_session = 4
+
+# Add MCP servers only when the project needs them. Keep external capabilities scoped.
+# [mcp_servers.example_docs]
+# url = "https://example.invalid/mcp"
+
+# v1.0.1 note: do not paste the newer beta [permissions] model into a legacy
+# sandbox_mode / sandbox_workspace_write configuration without following the
+# current OpenAI migration guidance. This repository keeps role profiles as
+# documentation instead of pretending one policy block fits every client version.
